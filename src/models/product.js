@@ -41,7 +41,6 @@ module.exports = {
                 if (!err) {
                     resolve(result);
                     fs.unlink(path, () => {
-                        console.error("Error occurred while trying to remove file");
                     });
                 } else {
                     reject(new Error(err));
@@ -55,7 +54,6 @@ module.exports = {
                 if (!err) {
                     resolve(result);                    
                     fs.unlink(path, () => {
-                        console.error("Error occurred while trying to remove file");
                     });
                 } else {
                     reject(new Error(err));
